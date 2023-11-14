@@ -1,0 +1,208 @@
+#score-timer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+#score,
+#timer,
+#score-history {
+  font-size: 18px;
+}
+
+#score-value,
+#timer-value,
+#score-history {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.mulai {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  width: 60px;
+  height: 38px;
+  border: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#judul {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(10, 84, 243);
+  margin-top: 5px; /* Menambahkan ruang atas sebesar 20px */
+  margin-bottom: 15px; /* Menambahkan ruang bawah sebesar 20px */
+  padding: 10px; /* Menambahkan ruang dalam sebesar 10px */
+  font-size: 20px; /* Menambahkan ukuran font menjadi 28px */
+}
+
+/* Akhir tambahan */
+body {
+  touch-action: pan-y;
+  background: #dfabe6; /* Atur warna latar belakang sesuai kebutuhan */
+}
+
+#container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 51% 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mbox {
+  height: 100%; /* Atur tinggi sesuai kebutuhan */
+  background: #dfabe6; /* Atur warna latar belakang sesuai kebutuhan */
+}
+
+#maze {
+  position: relative;
+  width: 340px;
+  height: 240px;
+  top: 15vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #dfabe6; /* Atur warna latar belakang sesuai kebutuhan */
+}
+
+.controls {
+  height: 10%;
+  background: #dfabe6;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px; /* Menambahkan margin atas sebesar 5px */
+}
+
+.buttons {
+  width: 210px;
+  height: 140px;
+  background: #7f6e81;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 70px 70px;
+  grid-template-columns: 70px 70px 70px;
+  align-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  border-radius: 8px;
+  display: grid;
+  /*box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);*/
+}
+.chevron {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  justify-self: center;
+  color: #222;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#bu {
+  grid-column-start: 2;
+}
+#bd {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+#bl {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+#br {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#thingie,
+#home {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  /*background: #39a;
+	transition: all .1s;*/
+}
+
+.emo {
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+}
+
+.barrier {
+  position: absolute;
+  background: #fff;
+}
+
+#top {
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  height: 2px;
+}
+
+#bottom {
+  top: 220px;
+  left: 20px;
+  width: 302px;
+  height: 2px;
+}
+
+/*style reset*/
+button {
+  display: inline-block;
+  border: none;
+  padding: none;
+  margin: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover,
+button:focus {
+  -webkit-appearance: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(1);
+  -webkit-appearance: none;
+}
